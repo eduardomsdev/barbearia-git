@@ -1,0 +1,70 @@
+
+body {
+    background-image: url(fundo_site.webp) !important;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+
+/* CONTAINER PRINCIPAL */
+.listar-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+    background: rgba(255,255,255,0.10);
+    padding: 25px;
+    border-radius: 18px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 4px 25px rgba(0,0,0,0.5);
+}
+
+
+.listar-container h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 25px;
+    color: white;
+}
+
+/* GRUPO POR BARBEIRO */
+.grupo-barbeiro {
+    margin-bottom: 40px;
+}
+
+.grupo-barbeiro h2 {
+    background: rgba(0,0,0,0.75);
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    font-size: 22px;
+    text-align: center;
+    color: white;
+}
+
+/* ITEM DE AGENDAMENTO */
+.agendamento-item {
+    background: white;
+    color: black;
+    padding: 18px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    transition: 0.2s;
+}
+
+.agendamento-item:hover {
+    transform: scale(1.02);
+}
+
+/* BOTÃO EXCLUIR */
+.agendamento-item a {
+    color: #d00000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.agendamento-item a:hover {
+    color: #ff3b3b;
+    text-decoration: underline;
+}

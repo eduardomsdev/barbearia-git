@@ -1,0 +1,180 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url(fundo_site.webp);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #222;
+}
+
+/* HEADER */
+header {
+    background: #111;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+header h1 {
+    font-size: 26px;
+}
+
+/* INTRO CONTAINER */
+.container {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.container h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.container p {
+    font-size: 18px;
+    color: white;
+}
+
+/* TÍTULO */
+h2 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 32px;
+    color: white;
+}
+
+.Barbeiros {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+    width: 90%;
+    margin: 40px auto;
+}
+
+/* CARD */
+.card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    text-align: center;
+    transition: .3s;
+}
+
+.card:hover {
+    transform: scale(1.04);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+}
+
+/* IMG */
+.card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+/* NOME */
+.card h3 {
+    margin: 18px 0 10px;
+    font-size: 22px;
+    color: #222;
+}
+
+/* BOTÃO */
+.btn-carrinho {
+    display: inline-block;
+    margin: 15px 0 25px;
+    background: #e63946;
+    padding: 10px 22px;
+    color: white;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn-carrinho:hover {
+    background: #b71c1c;
+}
+
+/* FOOTER */
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 80px;
+}
+
+/* MODAL */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.65);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+ #obs {
+    resize: none;
+    }
+    
+.modal.ativo {
+    display: flex !important;
+}
+
+.modal-content {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    display: flex;
+    gap: 25px;
+    width: 80%;
+    max-width: 900px;
+}
+
+/* DETALHES IMAGEM */
+.detalhes-barbeiro img {
+    width: 250px;
+    border-radius: 12px;
+}
+
+.form-agendar input,
+.form-agendar select,
+.form-agendar textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #aaa;
+    margin-bottom: 12px;
+}
+
+.form-agendar button {
+    width: 100%;
+    padding: 10px;
+    background: #e63946;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-agendar button:hover {
+    background: #b71c1c;
+}
